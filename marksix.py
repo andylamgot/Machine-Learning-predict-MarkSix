@@ -13,13 +13,13 @@ from keras.layers import Dense, Dropout, Activation
 
 def ldata(m,t):
 
-    # load the data from all the games happened until 31/12/2018
+    # load the data from all the games happened until today
     # m is the number of training examples ; t is the number of test examples
     # the output is extracting just the first number of the each game.
 
     
-    Location = r'marksix.xlsx'              # scraping it yourself
-    jogo = pd.read_excel(Location)
+    Location = r'marksix.csv'              # history
+    jogo = pd.read_csv(Location)
 
     dataset = {}
 
